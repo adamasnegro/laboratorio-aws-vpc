@@ -270,3 +270,13 @@ Mantenha o arquivo `README.md` na raiz do repositório e as 14 imagens dentro da
     ├── 13 - Tarefa 5 - Iniciar uma instância de servidor web.png
     └── 14 - FIM.png
 ```
+
+## 🎓 Formação e Agradecimentos
+
+Este laboratório foi desenvolvido como parte da formação em computação em nuvem, por meio da trilha **AWS re/Start**, oferecida pela **[Escola da Nuvem](https://escoladanuvem.org/)**.
+
+**Curso:** Formação em Nuvem — Trilha AWS re/Start  
+**Instituição:** [Escola da Nuvem](https://escoladanuvem.org/)  
+**Professor:** [Raphael Bernardo Ohlsen](https://www.linkedin.com/in/raphael-ohlsen/)
+
+Agradeço à Escola da Nuvem e ao professor Raphael Bernardo Ohlsen pelos conhecimentos compartilhados e pela contribuição para o desenvolvimento das minhas habilidades práticas em computação em nuvem e nos serviços da AWS.
