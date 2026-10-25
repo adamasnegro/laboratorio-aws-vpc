@@ -23,7 +23,7 @@ Este laboratório prático tem como objetivo criar uma rede virtual na AWS utili
 
 O diagrama apresenta a estrutura de rede utilizada como referência para o laboratório.
 
-![01 - Diagrama Cliente](imagens/01%20-%20Diagrama%20Cliente.png)
+![01 - Diagrama Cliente](imagens/01%20-%20Diagrama%20Cliente.PNG)
 
 ## 🌐 2. Criar a Amazon VPC
 
@@ -31,7 +31,7 @@ Uma **Amazon VPC (Virtual Private Cloud)** permite criar uma rede virtual isolad
 
 Documentação oficial: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
 
-![02 - Criar VPC](imagens/02%20-%20Criar%20VPC.png)
+![02 - Criar VPC](imagens/02%20-%20Criar%20VPC.PNG)
 
 ### Configuração da VPC
 
@@ -48,13 +48,13 @@ Documentação oficial: https://docs.aws.amazon.com/vpc/latest/userguide/what-is
 
 A VPC utiliza o bloco CIDR `10.0.0.0/16`, que permite organizar os endereços IP das sub-redes dentro da rede virtual.
 
-![03 - Criar fluxo de trabalho de VPC](imagens/03%20-%20Criar%20fluxo%20de%20trabalho%20de%20VPC.png)
+![03 - Criar fluxo de trabalho de VPC](imagens/03%20-%20Criar%20fluxo%20de%20trabalho%20de%20VPC.PNG)
 
 ### Resultado da criação
 
 Após concluir a configuração, a VPC será criada com os recursos de rede selecionados.
 
-![04 - Lab VPC](imagens/04%20-%20Lab%20VPC.png)
+![04 - Lab VPC](imagens/04%20-%20Lab%20VPC.PNG)
 
 ## 🧩 3. Configurar as sub-redes
 
@@ -67,7 +67,7 @@ As sub-redes dividem a VPC em segmentos menores de rede. Elas podem ser associad
 | Public Subnet 1 | `10.0.0.0/24` | Sub-rede pública |
 | Private Subnet 1 | `10.0.1.0/24` | Sub-rede privada |
 
-![05 - Sub-redes](imagens/05%20-%20Sub-redes.png)
+![05 - Sub-redes](imagens/05%20-%20Sub-redes.PNG)
 
 ## 🛣️ 4. Configurar as tabelas de rotas
 
@@ -80,7 +80,7 @@ Neste laboratório, serão utilizadas duas tabelas de rotas:
 
 A tabela de rotas pública poderá encaminhar tráfego para a internet por meio do Internet Gateway. A tabela privada utilizará as rotas configuradas para os recursos privados, incluindo o NAT Gateway quando aplicável.
 
-![06 - Tabelas de rotas](imagens/06%20-%20Tabelas%20de%20rotas.png)
+![06 - Tabelas de rotas](imagens/06%20-%20Tabelas%20de%20rotas.PNG)
 
 ## 🌍 5. Configurar o Internet Gateway
 
@@ -88,7 +88,7 @@ O Internet Gateway permite a comunicação entre recursos da VPC e a internet qu
 
 Neste laboratório, ele será utilizado para possibilitar o acesso externo ao servidor web localizado em uma sub-rede pública.
 
-![07 - Gateways da internet](imagens/07%20-%20Gateways%20da%20internet.png)
+![07 - Gateways da internet](imagens/07%20-%20Gateways%20da%20internet.PNG)
 
 ## 📡 6. Endereços IP elásticos
 
@@ -96,7 +96,7 @@ Um endereço IP elástico é um endereço IPv4 público que pode ser associado a
 
 Neste laboratório, o endereço IP elástico está relacionado à configuração do NAT Gateway.
 
-![08 - Endereços IP elásticos](imagens/08%20-%20Endereços%20IP%20elásticos.png)
+![08 - Endereços IP elásticos](imagens/08%20-%20Endereços%20IP%20elásticos.PNG)
 
 ## 🔀 7. Configurar o NAT Gateway
 
@@ -104,7 +104,7 @@ O NAT Gateway permite que recursos em sub-redes privadas iniciem conexões com d
 
 A configuração deve seguir a arquitetura proposta no laboratório e utilizar a tabela de rotas privada para encaminhar o tráfego externo por meio do NAT Gateway, quando aplicável.
 
-![09 - Gateways NAT](imagens/09%20-%20Gateways%20NAT.png)
+![09 - Gateways NAT](imagens/09%20-%20Gateways%20NAT.PNG)
 
 ## 🧱 8. Criar sub-redes adicionais
 
@@ -117,7 +117,7 @@ Na próxima etapa, serão criadas mais duas sub-redes em uma segunda zona de dis
 
 Essas sub-redes ampliam a organização da rede e permitem distribuir recursos entre zonas de disponibilidade.
 
-![10 - Criar sub-redes adicionais](imagens/10%20-%20Tarefa%202%20Criar%20sub-redes%20adicionais.png)
+![10 - Criar sub-redes adicionais](imagens/10%20-%20Tarefa%202%20Criar%20sub-redes%20adicionais.PNG)
 
 ## 🔗 9. Associar as sub-redes às tabelas de rotas
 
@@ -132,7 +132,7 @@ Depois de criar as sub-redes adicionais, é necessário associá-las às tabelas
 
 A associação correta garante que cada sub-rede utilize as rotas apropriadas para sua finalidade.
 
-![11 - Associar sub-redes e adicionar rotas](imagens/11%20-%20Tarefa%203%20Associar%20as%20sub-redes%20e%20adicionar%20rotas.png)
+![11 - Associar sub-redes e adicionar rotas](imagens/11%20-%20Tarefa%203%20Associar%20as%20sub-redes%20e%20adicionar%20rotas.PNG)
 
 ## 🔐 10. Criar um grupo de segurança
 
@@ -153,7 +153,7 @@ A regra HTTP permite que clientes externos acessem o servidor web pela porta 80.
 
 **Observação de segurança:** permitir acesso de qualquer endereço IPv4 é adequado apenas para o cenário de teste previsto no laboratório. Em ambientes reais, restrinja as origens conforme a necessidade. Não abra portas administrativas para toda a internet.
 
-![12 - Criar grupo de segurança VPC](imagens/12%20-%20Tarefa%204%20-%20Criar%20um%20grupo%20de%20segurança%20VPC.png)
+![12 - Criar grupo de segurança VPC](imagens/12%20-%20Tarefa%204%20-%20Criar%20um%20grupo%20de%20segurança%20VPC.PNG)
 
 ## 🖥️ 11. Iniciar uma instância de servidor web
 
@@ -197,7 +197,7 @@ O script executa as seguintes tarefas:
 
 **Importante:** o script pressupõe que a instância consegue acessar a internet para baixar os pacotes e o arquivo da aplicação. A configuração da rede e das rotas precisa permitir essa comunicação.
 
-![13 - Iniciar instância de servidor web](imagens/13%20-%20Tarefa%205%20-%20Iniciar%20uma%20instância%20de%20servidor%20web.png)
+![13 - Iniciar instância de servidor web](imagens/13%20-%20Tarefa%205%20-%20Iniciar%20uma%20instância%20de%20servidor%20web.PNG)
 
 ## ✅ 12. Verificar a instância EC2
 
@@ -225,7 +225,7 @@ Se a aplicação não carregar, verifique o estado da instância, as regras de e
 
 Ao concluir as etapas, o laboratório terá uma VPC configurada com sub-redes públicas e privadas, tabelas de rotas, conectividade de rede e um grupo de segurança. Uma instância EC2 terá sido iniciada para hospedar o servidor web.
 
-![14 - Laboratório concluído](imagens/14%20-%20FIM.png)
+![14 - Laboratório concluído](imagens/14%20-%20FIM.PNG)
 
 ## 📚 Conceitos praticados
 
@@ -270,3 +270,13 @@ Mantenha o arquivo `README.md` na raiz do repositório e as 14 imagens dentro da
     ├── 13 - Tarefa 5 - Iniciar uma instância de servidor web.png
     └── 14 - FIM.png
 ```
+
+## 🎓 Formação e Agradecimentos
+
+Este laboratório foi desenvolvido como parte da minha jornada de aprendizado em Computação em Nuvem, por meio da formação **AWS re/Start**, oferecida pela [Escola da Nuvem](https://escoladanuvem.org/).
+
+**Instituição:** [Escola da Nuvem](https://escoladanuvem.org/)  
+**Formação:** Formação em Nuvem com trilha AWS re/Start  
+**Professor:** [Raphael Bernardo Ohlsen](https://www.linkedin.com/in/raphael-ohlsen/)
+
+Agradeço à Escola da Nuvem pela oportunidade de aprendizado e ao professor Raphael Bernardo Ohlsen pelos ensinamentos e pela contribuição para o desenvolvimento dos meus conhecimentos em computação em nuvem e nos serviços da AWS.
