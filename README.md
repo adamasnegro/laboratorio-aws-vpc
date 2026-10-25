@@ -153,7 +153,7 @@ A regra HTTP permite que clientes externos acessem o servidor web pela porta 80.
 
 **Observação de segurança:** permitir acesso de qualquer endereço IPv4 é adequado apenas para o cenário de teste previsto no laboratório. Em ambientes reais, restrinja as origens conforme a necessidade. Não abra portas administrativas para toda a internet.
 
-![12 - Criar grupo de segurança VPC](imagens/12%20-%20Tarefa%204%20-%20Criar%20um%20grupo%20de%20segurança%20VPC.PNG)
+![12 - Tarefa 4 - Criar um grupo de segurança VPC](imagens/12%20-%20Tarefa%204%20-%20%20Criar%20um%20grupo%20de%20seguran%C3%A7a%20VPC.PNG)
 
 ## 🖥️ 11. Iniciar uma instância de servidor web
 
@@ -197,7 +197,7 @@ O script executa as seguintes tarefas:
 
 **Importante:** o script pressupõe que a instância consegue acessar a internet para baixar os pacotes e o arquivo da aplicação. A configuração da rede e das rotas precisa permitir essa comunicação.
 
-![13 - Iniciar instância de servidor web](imagens/13%20-%20Tarefa%205%20-%20Iniciar%20uma%20instância%20de%20servidor%20web.PNG)
+![13 - Tarefa 5 - Iniciar uma instância de servidor web](imagens/13%20-%20Tarefa%205%20-%20%20Iniciar%20uma%20inst%C3%A2ncia%20de%20servidor%20web.PNG)
 
 ## ✅ 12. Verificar a instância EC2
 
